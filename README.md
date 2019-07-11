@@ -4,25 +4,26 @@
 For further reference, please consider the following sections:
 Requirements for the project are at the very bottom
 
-####Security Details
+#### Security Details
 Username: user
 
 Password: password
 
-###Usage: 
-#####move to parent folder
+### Usage: 
+
+##### move to parent folder
 cd restservice
 
-#####build with maven
+##### build with maven
 mvn clean install
 
-#####move to target folder
+##### move to target folder
 cd target
 
-#####execute the program
+##### execute the program
 java -jar lendingbackend-1.0.jar
 
-###Sending Messages
+### Sending Messages
 
 Make a post call to localhost:8080
 
@@ -36,14 +37,14 @@ if using postman remember to enter username and password (user:password) and sel
 
 {"amount":65344363, "term":36}
 
-###Getting History
+### Getting History
 
 curl -u user:password --header "Content-Type: application/json" --request GET http://localhost:8080/history
 
 with postman just make a get request at http://localhost:8080/history
 (you will still need username and password (user:password))
 
-###Database
+### Database
 H2 database is available at address below, you will be asked to enter username and password if you use a browser to access it (user:password)
 
 localhost:8080/console/
@@ -51,9 +52,9 @@ localhost:8080/console/
 for h2 database
 username: sa, there is no password
 
-##Application of Requirements
+## Application of Requirements
 
-###Business requirements
+### Business requirements
 
 ● User can authenticate and enter amount and duration to get a loan
 
@@ -63,7 +64,8 @@ username: sa, there is no password
 
 ● User can get a history of past transactions
 
-###Technical requirements
+### Technical requirements
+
 ● Must be created with java 8, java based config and jpa, using restful api, embedded database
 
 ● Has unit and integration tests
