@@ -54,6 +54,7 @@ username: sa, there is no password
 ##Application of Requirements
 
 ###Business requirements
+
 ● User can authenticate and enter amount and duration to get a loan
 
 ● Request is denied if it is between 0-6 am or 3 requests from same ip has been made
